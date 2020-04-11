@@ -3,12 +3,12 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
-  # on:
-  #   branch: gh-pages
-  branches:
-    only:
-    - gh-pages
-      # - /.*/
+  on:
+    branch: gh-pages
+branches:
+  only:
+  - gh-pages
+    # - /.*/
 
 language: python - "3.8"
 
