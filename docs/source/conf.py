@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
 # Sphinx configuration for package-template
@@ -16,13 +17,13 @@ import sys
 import time
 import package_template
 
-from aiida.manage.configuration import load_documentation_profile
+# from aiida.manage.configuration import load_documentation_profile
 
 # -- AiiDA-related setup --------------------------------------------------
 
 # Load the dummy profile even if we are running locally, this way the documentation will succeed even if the current
 # default profile of the AiiDA installation does not use a Django backend.
-load_documentation_profile()
+# load_documentation_profile()
 
 # If we are not on READTHEDOCS load the Sphinx theme manually
 if not os.environ.get('READTHEDOCS', None):
@@ -48,12 +49,12 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.viewcode',
     'sphinxcontrib.contentui',
-    'aiida.sphinxext',
+    # 'aiida.sphinxext',
 ]
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/2.7', None),
-    'aiida': ('http://aiida-core.readthedocs.io/en/latest/', None),
+    # 'aiida': ('http://aiida-core.readthedocs.io/en/latest/', None),
 }
 
 nitpick_ignore = [('py:obj', 'module')]

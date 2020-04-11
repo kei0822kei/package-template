@@ -9,29 +9,12 @@
         "Programming Language :: Python",
         "Intended Audience :: Science/Research",
         "License :: OSI Approved :: MIT License",
-        "Natural Language :: English",
-        "Framework :: AiiDA"
+        "Natural Language :: English"
     ],
-    "version": "0.1.0a0",
-    "entry_points": {
-        "aiida.data": [
-            "package_template = package_template.data:DiffParameters"
-        ],
-        "aiida.calculations": [
-            "package_template = package_template.calculations:DiffCalculation"
-        ],
-        "aiida.parsers": [
-            "package_template = package_template.parsers:DiffParser"
-        ],
-        "aiida.cmdline.data": [
-            "package_template = package_template.cli:data_cli"
-        ]
-    },
+    "version": "0.0.1",
     "include_package_data": true,
-    "setup_requires": ["reentry"],
     "reentry_register": true,
     "install_requires": [
-        "aiida-core>=1.1.0,<2.0.0",
         "six",
         "voluptuous"
     ],

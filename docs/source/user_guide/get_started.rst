@@ -37,6 +37,3 @@ If you have already set up your own package_template code using
 
 Available calculations
 ++++++++++++++++++++++
-
-.. aiida-calcjob:: DiffCalculation
-    :module: package_template.calculations
