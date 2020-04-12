@@ -5,9 +5,9 @@ deploy:
   keep_history: true
   on:
     branch: gh-pages
-branches:
-  only:
-  - gh-pages
+    # branches:
+    #   only:
+    #   - gh-pages
 
 language: python - "3.6"
 
